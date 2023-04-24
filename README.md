@@ -6,12 +6,14 @@ This endpoint preloads data for the application based on the given optional para
 ## Request
 - Method: GET
 - URL: `/preload`
+- Example: GET `/preload?invoices=true&pos=true&schedule=true&hour=2&minute=30`
 
 ## Parameters
 - `invoices` (bool, optional): If `true`, preload invoice data. Default value is `false`.
-- `POs` (bool, optional): If `true`, preload purchase orders data. Default value is `false`.
-- `hour` (int, optional): The hour at which the preloading should be scheduled. Default value is the current hour.
-- `minute` (int, optional): The minute at which the preloading should be scheduled. Default value is the current minute.
+- `pos` (bool, optional): If `true`, preload purchase orders data. Default value is `false`.
+- `schedule` (bool, optional): If `true`, the preload will be scheduled for the provided time.
+    - `hour` (int, optional): The hour at which the preloading should be scheduled. Default value is the current hour.
+    - `minute` (int, optional): The minute at which the preloading should be scheduled. Default value is the current minute.
 
 ## Headers
 - `Authorization` (string): The authorization token for accessing the endpoint.
