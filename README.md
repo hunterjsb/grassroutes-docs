@@ -14,6 +14,7 @@ This endpoint preloads data for the application based on the given optional para
 
 ## Headers
 - `Authorization` (string): The authorization token for accessing the endpoint.
+
 `Authorization: Bearer YOUR-API-KEY`
 
 ## Response
